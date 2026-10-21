@@ -1,14 +1,6 @@
 <<<<<<< HEAD
 # ScamShield AI Enterprise — AI Scam Call & Message Threat Intelligence Platform
-
-[![FastAPI](https://img.shields.io/badge/FastAPI-0.110+-009688.svg?style=flat&logo=fastapi)](https://fastapi.tiangolo.com)
-[![MySQL 8.0](https://img.shields.io/badge/MySQL-8.0_scamshield__db-4479A1.svg?style=flat&logo=mysql)](https://www.mysql.com)
-[![Python](https://img.shields.io/badge/Python-3.11+-3776AB.svg?style=flat&logo=python)](https://www.python.org)
-[![React](https://img.shields.io/badge/React-19-61DAFB.svg?style=flat&logo=react)](https://react.dev)
-[![Vite](https://img.shields.io/badge/Vite-8.0+-646CFF.svg?style=flat&logo=vite)](https://vitejs.dev)
-[![TailwindCSS](https://img.shields.io/badge/TailwindCSS-v4-38B2AC.svg?style=flat&logo=tailwind-css)](https://tailwindcss.com)
-[![Scikit-Learn](https://img.shields.io/badge/Scikit--Learn-1.4+-F7931E.svg?style=flat&logo=scikit-learn)](https://scikit-learn.org)
-
+ 
 **ScamShield AI Enterprise** is a production-grade cybersecurity and fraud intelligence platform designed to detect, track, and neutralize fraudulent attacks across **SMS, WhatsApp, emails, and voice telephone calls (Vishing)**.
 
 It is connected directly to a local **MySQL 8.0 database (`scamshield_db`)** using SQLAlchemy ORM, managing persistent scan audit logs, caller reputation registries, phishing domain blacklists, and database-backed training datasets.
@@ -27,53 +19,7 @@ flowchart TD
         URLScan["Phishing URL Inspector"]
         Feedback["Analyst Feedback (True / False Positives)"]
     end
-
-    subgraph API["FastAPI Backend Service"]
-        R1["POST /api/v1/analyze-message"]
-        R2["POST /api/v1/analyze-call"]
-        R3["POST /api/v1/analyze-url"]
-        R4["GET /api/v1/analytics/overview"]
-        R5["GET /api/v1/scans/history"]
-        R6["GET /api/v1/intelligence/blacklist"]
-        R7["POST /api/v1/intelligence/report-threat"]
-        R8["POST /api/v1/feedback"]
-        R9["POST /api/v1/model/retrain"]
-    end
-
-    subgraph Engine["Hybrid Intelligence Pipeline"]
-        ML["NLP Classifier Pipeline (TF-IDF + Calibrated Logistic Regression)"]
-        Rules["Heuristic Risk Engine (9 Core Threat Vectors)"]
-        URLHeuristics["URL Inspector (IP Host, Shortener, Typosquatting)"]
-        VishingRules["Vishing Engine (Live OTP, ATM Travel, Gag Tactics)"]
-    end
-
-    subgraph DB["MySQL Database: scamshield_db (Port 3306)"]
-        T1[("scan_logs")]
-        T2[("phone_reputation")]
-        T3[("domain_blacklist")]
-        T4[("spam_training_corpus")]
-        T5[("user_feedback")]
-    end
-
-    MsgScan --> R1
-    CallScan --> R2
-    URLScan --> R3
-    SOC --> R4 & R5
-    BlacklistUI --> R6 & R7
-    Feedback --> R8
-
-    R1 & R2 --> Engine
-    R1 & R2 --> T2
-    R1 & R3 --> T3
-
-    Engine --> R1 & R2
-    R1 & R2 -->|Persist Audit Record| T1
-    R7 -->|Register New Threat| T2 & T3
-    R8 -->|Save Analyst Verdict| T5
-    R9 -->|Fetch Training Corpus| T4
-```
-
----
+ 
 
 ## 2. MySQL Database Schema (`scamshield_db`)
 
