@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # ScamShield AI Enterprise — AI Scam Call & Message Threat Intelligence Platform
  
 **ScamShield AI Enterprise** is a production-grade cybersecurity and fraud intelligence platform designed to detect, track, and neutralize fraudulent attacks across **SMS, WhatsApp, emails, and voice telephone calls (Vishing)**.
@@ -116,6 +115,21 @@ All 11 unit and integration tests validate the API and MySQL integration with 10
 - **One-Click Real-World Test Presets**: Test real cases (Chase smishing, IRS arrest warrant call, bank OTP theft, FedEx safe delivery) instantly.
 - **Session History & Analytics**: Compare past scans and inspect threat trends.
 - **Explainable AI Breakdown**: View raw ML class probabilities alongside heuristic trigger words.
+
+---
+
+## Application Screenshots
+
+Screenshots captured from the running ScamShield application using fictional demonstration data.
+
+### Threat operations dashboard
+![ScamShield threat operations dashboard](docs/screenshots/dashboard.png)
+
+### Message and SMS analysis
+![ScamShield message analysis results](docs/screenshots/message-analysis.png)
+
+### Call transcript analyzer
+![ScamShield call transcript analyzer](docs/screenshots/call-analyzer.png)
 
 ---
 
@@ -353,7 +367,3 @@ All 7 test suites validate:
 
 ## License
 MIT License. Built for security awareness, fraud prevention, and academic demonstration.
-=======
-# AI-Powered-Scam_Detection
-build a power-full auto detection Call and Message Detection System
->>>>>>> e6eab382aeab218ce836ca60c13c9ddc5ea2f081
