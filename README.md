@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # ScamShield AI Enterprise — AI Scam Call & Message Threat Intelligence Platform
 
 [![FastAPI](https://img.shields.io/badge/FastAPI-0.110+-009688.svg?style=flat&logo=fastapi)](https://fastapi.tiangolo.com)
@@ -406,3 +407,7 @@ All 7 test suites validate:
 
 ## License
 MIT License. Built for security awareness, fraud prevention, and academic demonstration.
+=======
+# AI-Powered-Scam_Detection
+build a power-full auto detection Call and Message Detection System
+>>>>>>> e6eab382aeab218ce836ca60c13c9ddc5ea2f081
