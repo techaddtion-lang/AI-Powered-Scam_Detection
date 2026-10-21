@@ -1,0 +1,74 @@
+[
+  {
+    "id": "sample-1",
+    "type": "sms",
+    "title": "Chase Bank Account Freeze Phishing",
+    "description": "Urgent fake bank alert attempting to harvest banking credentials via lookalike domain.",
+    "sender_or_caller": "+1 (800) 242-7338",
+    "content": "URGENT: Chase Bank alert. Your debit card has been temporarily locked due to suspicious activity of $842.10. Verify immediately at http://chase-security-verify.net/login to prevent permanent block.",
+    "expected_classification": "High Risk Scam"
+  },
+  {
+    "id": "sample-2",
+    "type": "call",
+    "title": "IRS Warrant & Arrest Threat (Vishing)",
+    "description": "Criminal impersonation of IRS officer demanding immediate settlement via wire or prepaid cards.",
+    "sender_or_caller": "+1 (202) 555-0199",
+    "content": "Hello, this is Officer James from the IRS Department. I am calling to inform you that there are 3 federal criminal allegations against your Social Security Number. If you do not pay the penalty of $2,500 today using electronic voucher or wire transfer, the local police department will arrest you at your residence within one hour. Do not hang up this call.",
+    "expected_classification": "High Risk Scam"
+  },
+  {
+    "id": "sample-3",
+    "type": "sms",
+    "title": "USPS Package Clearance Smishing",
+    "description": "Smishing bait alleging unpaid customs clearance fee hosted on a suspicious TLD.",
+    "sender_or_caller": "USPS-ALERT",
+    "content": "USPS Delivery: We attempted to deliver your package #US92839482, but an unpaid customs clearance fee of $2.49 is required. Update your address & payment at http://usps-tracking-redelivery.buzz",
+    "expected_classification": "High Risk Scam"
+  },
+  {
+    "id": "sample-4",
+    "type": "call",
+    "title": "Bank Impersonation Live OTP Theft",
+    "description": "Vishing attacker impersonating bank fraud team attempting to coerce the victim into reading 2FA OTP.",
+    "sender_or_caller": "+1 (888) 555-0144",
+    "content": "Good day sir, I am calling from the fraud security division of your bank. We noticed an unauthorized charge of $1,200 on your account. To reverse this transaction immediately, I have sent a 6-digit confirmation code to your mobile phone. Please read that OTP code to me right now so I can cancel the charge.",
+    "expected_classification": "High Risk Scam"
+  },
+  {
+    "id": "sample-5",
+    "type": "sms",
+    "title": "Pre-Approved Loan Offer (Suspicious Marketing)",
+    "description": "High pressure unsolicited financing offer with questionable claims and unknown link.",
+    "sender_or_caller": "+1 (555) 492-0192",
+    "content": "Exclusive Pre-Approved Loan Offer! You are eligible for an instant personal cash loan up to $50,000 with 0% interest for 6 months. No credit score check required. Apply today: http://fast-cash-loans-today.club",
+    "expected_classification": "Suspicious"
+  },
+  {
+    "id": "sample-6",
+    "type": "sms",
+    "title": "Legitimate Bank 2FA Verification (Safe)",
+    "description": "Real two-factor authentication message with explicit warning not to share code.",
+    "sender_or_caller": "72972 (BofA)",
+    "content": "Bank of America: Security code 827419 for your Zelle transfer. Do NOT share this code with anyone over phone or text. Bank associates will NEVER request this code.",
+    "expected_classification": "Safe"
+  },
+  {
+    "id": "sample-7",
+    "type": "sms",
+    "title": "Legitimate Package Delivered Notice (Safe)",
+    "description": "Legitimate delivery confirmation message without requests for fees or credentials.",
+    "sender_or_caller": "FedEx",
+    "content": "FedEx: Your shipment with tracking number 78923482910 has been delivered to your front porch at 2:15 PM. Thank you for using FedEx.",
+    "expected_classification": "Safe"
+  },
+  {
+    "id": "sample-8",
+    "type": "call",
+    "title": "Grandchild Bail Emergency Scam",
+    "description": "Classic grandparent scam demanding Walmart MoneyGram wire or gift cards.",
+    "sender_or_caller": "+1 (415) 555-0177",
+    "content": "Grandma? It's me, your grandson. Please don't tell mom or dad, I got into a terrible car accident and I am in jail. The public defender says I need $3,000 bail money right now. Please go to Walmart and send a MoneyGram wire transfer or buy Google Play gift cards.",
+    "expected_classification": "High Risk Scam"
+  }
+]
